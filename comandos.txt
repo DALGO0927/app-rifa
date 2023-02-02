@@ -21,7 +21,8 @@
 	git log 
 	git remote add origin https://github.com/lerkiscausado/sipply.git
 	git branch -M main 	crear rama
-	git push - u origin main
+	git push -u origin RAMA main
+	git pull origin main
 instalar Node en Instancia Ec2
  - NVM 
  - curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
