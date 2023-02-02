@@ -4,4 +4,4 @@ array1.forEach(element => console.log(element));
 
 // expected output: "a"
 // expected output: "b"
-// expected output: "c"
+// expected output: "c" lologit
