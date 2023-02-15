@@ -1,0 +1,57 @@
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+  
+  td {
+    border: 1px solid black;
+    padding: 5px;
+  }
+
+  td.libre {
+    background-color: #ccc;
+  }
+  td.escogido {
+    background-color: #f00;
+  }
+  td.cancelado {
+    background-color: #0f0;
+  }
+  td.seleccionado {
+    border: 2px solid #000;
+  }
+  
+  .explicacion {
+    margin-top: 20px;
+  }
+  
+  .explicacion ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .explicacion li {
+    margin-bottom: 10px;
+  }
+  
+  .explicacion span {
+    padding: 2px;
+    display: inline-block;
+    width: 80px;
+    font-weight: bold;
+  }
+  
+  .explicacion .cancelado {
+    background-color: green;
+  }
+  
+  .explicacion .escogido {
+    background-color: red;
+  }
+  
+  .explicacion .libre {
+    background-color: white;
+    border: 1px solid black;
+  }
+  

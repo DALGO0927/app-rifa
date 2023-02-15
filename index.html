@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Generador de tabla</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="tabla-container">
+        <button onclick="selectCell()">Seleccionar celda</button>
+        <button onclick="setCellStatus('libre')">Marcar como libre</button>
+        <button onclick="setCellStatus('escogido')">Marcar como escogido</button>
+        <button onclick="setCellStatus('cancelado')">Marcar como cancelado</button>
+        <div class="explicacion">
+            <p>Significado de los colores:</p>
+            <ul>
+              <li><span class="cancelado">Cancelado</span>: Este color indica que la celda ha sido cancelada.</li>
+              <li><span class="escogido">Escogido</span>: Este color indica que la celda ha sido escogida.</li>
+              <li><span class="libre">Libre</span>: Este color indica que la celda está disponible.</li>
+            </ul>
+        </div>
+        <!-- Botón Compartir -->
+        <button id="compartir" onclick="generarLink()">Compartir</button>
+        
+        <!-- Contenedor del enlace generado -->
+        <div id="enlace-generado" style="display: none;">
+          <p>Enlace generado:</p>
+          <textarea id="enlace" readonly></textarea>
+          <p>Enviar Rifa.</p>
+          <form id="share-form">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <button type="submit" id="share-button">Compartir</button>
+          </form>
+          
+        </div>
+
+          
+      </div>
+      
+	<script src="script.js"></script>
+</body>
+</html>
